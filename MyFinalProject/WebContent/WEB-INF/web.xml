@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>MyFinalProject</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+
+	<servlet>
+		<servlet-name>ControllerServlet</servlet-name>
+		<servlet-class>by.myProject.controller.ControllerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllerServlet</servlet-name>
+		<url-pattern>/controllerServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>MainPage</servlet-name>
+		<jsp-file>/WEB-INF/jsp/main_page.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MainPage</servlet-name>
+		<url-pattern>/main_page</url-pattern>
+	</servlet-mapping>
+			
+	<servlet>
+		<servlet-name>RegisterPage</servlet-name>
+		<jsp-file>/WEB-INF/jsp/register_page.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterPage</servlet-name>
+		<url-pattern>/register_page</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>WorkerPage</servlet-name>
+		<jsp-file>/WEB-INF/jsp/worker_page.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WorkerPage</servlet-name>
+		<url-pattern>/worker_page</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BossPage</servlet-name>
+		<jsp-file>/WEB-INF/jsp/boss_page.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BossPage</servlet-name>
+		<url-pattern>/boss_page</url-pattern>
+	</servlet-mapping>
+
+
+
+</web-app>
